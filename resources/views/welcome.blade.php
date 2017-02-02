@@ -39,7 +39,8 @@
         <div class="container">
             <div class="content">
                 <div class="title">Laravel 5</div>
-            </div>
+            </div><br>
+            <a href="https://assignment-part2.herokuapp.com/customers" target="_blank">Click Here To View Customers</a>
         </div>
     </body>
 </html>
