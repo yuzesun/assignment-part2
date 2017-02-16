@@ -25,7 +25,7 @@
                 <td>{{ $stock->symbol }}</td>
                 <td>{{ $stock->name }}</td>
                 <td>{{ $stock->shares }}</td>
-                <td>{{ $stock->purchase_price }}</td>
+                <td><?php echo '$', $stock->purchase_price ?></td>
                 <td>{{ $stock->purchased }}</td>
                 <td><a href="{{url('stocks',$stock->id)}}" class="btn btn-primary">Read</a></td>
                 <td><a href="{{route('stocks.edit',$stock->id)}}" class="btn btn-warning">Update</a></td>

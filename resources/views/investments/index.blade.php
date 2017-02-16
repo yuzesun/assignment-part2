@@ -25,9 +25,9 @@
                 <td>{{ $investment->customer->name }}</td>
                 <td>{{ $investment->category }}</td>
                 <td>{{ $investment->description }}</td>
-                <td>{{ $investment->acquired_value }}</td>
+                <td><?php echo '$', $investment->acquired_value ?></td>
                 <td>{{ $investment->acquired_date }}</td>
-                <td>{{ $investment->recent_value }}</td>
+                <td><?php echo '$', $investment->recent_value ?></td>
                 <td>{{ $investment->recent_date }}</td>
                 <td><a href="{{url('investments',$investment->id)}}" class="btn btn-primary">Read</a></td>
                 <td><a href="{{route('investments.edit',$investment->id)}}" class="btn btn-warning">Update</a></td>

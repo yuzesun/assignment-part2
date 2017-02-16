@@ -19,7 +19,7 @@
             </tr>
             <tr>
                 <td>Purchase Price </td>
-                <td><?php echo ($stock['purchase_price']); ?></td>
+                <td><?php echo '$',($stock['purchase_price']); ?></td>
             </tr>
             <tr>
                 <td>Date Purchased</td>

@@ -15,7 +15,7 @@
             </tr>
             <tr>
                 <td>Acquired Value</td>
-                <td><?php echo ($investment['acquired_value']); ?></td>
+                <td><?php echo '$', ($investment['acquired_value']); ?></td>
             </tr>
             <tr>
                 <td>Acquired Date</td>
@@ -23,7 +23,7 @@
             </tr>
             <tr>
                 <td>Recent Value</td>
-                <td><?php echo ($investment['recent_value']); ?></td>
+                <td><?php echo '$', ($investment['recent_value']); ?></td>
             </tr>
             <tr>
                 <td>Recent Date</td>

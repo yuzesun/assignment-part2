@@ -7,7 +7,7 @@
     <table class="table table-striped table-bordered table-hover">
         <thead>
         <tr class="bg-info">
-            <th> Cust Number</th>
+            <th>Cust Number</th>
             <th>Name</th>
             <th>Address</th>
             <th>City</th>
