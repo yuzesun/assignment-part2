@@ -1,5 +1,14 @@
-@extends('app')
+@extends('layouts.home')
 @section('content')
+
+    <div class="container">
+
+        <ol class="breadcrumb">
+            <li><a href="{{ url('/') }}">Home</a></li>
+            <li><a href="{{ url('/investments') }}">Investments</a></li>
+            <li class="active">Edit</li>
+        </ol>
+
     <h1>Update Investment</h1>
     {!! Form::model($investment,['method' => 'PATCH','route'=>['investments.update',$investment->id]]) !!}
     <div class="form-group">
@@ -31,5 +40,7 @@
         {!! Form::submit('Update', ['class' => 'btn btn-primary']) !!}
     </div>
     {!! Form::close() !!}
+
+    </div>
 @stop
 

@@ -1,6 +1,13 @@
-@extends('app')
+@extends('layouts.home')
 
 @section('content')
+    <div class="container">
+
+        <ol class="breadcrumb">
+            <li><a href="{{ url('/') }}">Home</a></li>
+            <li class="active">Investments</li>
+        </ol>
+
     <h1>Investment</h1>
     <a href="{{url('/investments/create')}}" class="btn btn-success">Create Investment</a>
     <hr>
@@ -42,5 +49,6 @@
         </tbody>
 
     </table>
+    </div>
 @endsection
 

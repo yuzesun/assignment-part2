@@ -1,5 +1,14 @@
-@extends('app')
+@extends('layouts.home')
 @section('content')
+
+    <div class="container">
+
+        <ol class="breadcrumb">
+            <li><a href="{{ url('/') }}">Home</a></li>
+            <li><a href="{{ url('/customers') }}">Customers</a></li>
+            <li class="active">Read</li>
+        </ol>
+
     <h1>Customer </h1>
 
     <div class="container" style="align:center">
@@ -164,6 +173,8 @@
     <?php $cportfolio = $ivalue + $svalue ?>
     <p> <?php echo 'Total of Initial Portfolio Value: $', number_format ($iportfolio,2), '.' ?></p>
     <p> <?php echo 'Total of Current Portfolio Value: $', number_format ($cportfolio,2), '.' ?></p>
+
+    </div>
 
 
 @stop

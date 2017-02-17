@@ -1,5 +1,14 @@
-@extends('app')
+@extends('layouts.home')
 @section('content')
+
+    <div class="container">
+
+        <ol class="breadcrumb">
+            <li><a href="{{ url('/') }}">Home</a></li>
+            <li><a href="{{ url('/customers') }}">Customers</a></li>
+            <li class="active">Create</li>
+        </ol>
+
     <h1>Create New Customer</h1>
     {!! Form::open(['url' => 'customers']) !!}
     <div class="form-group">
@@ -44,5 +53,7 @@
         {!! Form::submit('Save', ['class' => 'btn btn-primary form-control']) !!}
     </div>
     {!! Form::close() !!}
+
+    </div>
 @stop
 

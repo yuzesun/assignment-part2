@@ -1,6 +1,14 @@
-@extends('app')
+@extends('layouts.home')
 
 @section('content')
+
+    <div class="container">
+
+        <ol class="breadcrumb">
+            <li><a href="{{ url('/') }}">Home</a></li>
+            <li class="active">Customers</li>
+        </ol>
+
     <h1>Customer</h1>
     <a href="{{url('/customers/create')}}" class="btn btn-success">Create Customer</a>
     <hr>
@@ -44,5 +52,7 @@
         </tbody>
 
     </table>
+
+    </div>
 @endsection
 

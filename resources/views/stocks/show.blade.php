@@ -1,5 +1,13 @@
-@extends('app')
+@extends('layouts.home')
 @section('content')
+    <div class="container">
+
+        <ol class="breadcrumb">
+            <li><a href="{{ url('/') }}">Home</a></li>
+            <li><a href="{{ url('/stocks') }}">Stocks</a></li>
+            <li class="active">Read</li>
+        </ol>
+
     <h1>Stock </h1>
     <div class="container">
         <table class="table table-striped table-bordered table-hover">
@@ -27,6 +35,7 @@
             </tr>
             </tbody>
         </table>
+    </div>
     </div>
 @stop
 
